@@ -1,0 +1,23 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__
+
+# Virtual environment
+venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# Flask instance folder
+instance/
+
+# Database files
+*.db
+
+# IDE specific files (e.g., PyCharm, IntelliJ)
+.idea/
+
+# MacOS system files
+.DS_Store

@@ -1,0 +1,8 @@
+<!-- app/templates/about.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h2>About Me</h2>
+    <p>I'm [Your Name], a web developer with a passion for creating dynamic, user-friendly websites.</p>
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+{% endblock %}
