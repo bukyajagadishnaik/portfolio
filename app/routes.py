@@ -27,7 +27,7 @@ def create_routes(app):
             email = request.form['email']
             if email :
                 customer = [email]
-                print(customer)       
+                #print(customer)       
                 msgbody = f"""
 Hi {name},
 Thank you so much for visiting my portfolio website and taking the time to send me your feedback and suggestions! I truly appreciate your thoughts on [specific suggestion or message they sent].
