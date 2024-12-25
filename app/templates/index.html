@@ -1,7 +1,30 @@
 <!-- app/templates/index.html -->
 {% extends 'layout.html' %}
-
+{% block title %}
+Home {% endblock title %}
 {% block content %}
-    <h2>Welcome to My Portfolio!</h2>
-    <p>Hi, I'm [Your Name]. I'm a passionate developer. Explore my work below.</p>
+    <!-- banner section -->
+    <section id="home" class="banner_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center text-md-start">
+                    <h6>Hello , It's Me</h6>
+                    <h1>Bukya Jagadish Naik</h1>
+                    <h2>And I'M a <span>Developer</span></h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quas,<br>
+                        ea, porro ut illo fugaiste temporibus nulla voluptatum ullam hic <br>
+                        voluptatibus dolor doloremque aperiam voluptas repellendus, aspernatur nihil odio.</p>
+                    <div class="mt-4">
+                        <a href="" class="main-btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="../static/images/IMG_20241031_224927_302.webp" alt="profile" height="350px"  class="home-img falling-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner exit -->
 {% endblock %}

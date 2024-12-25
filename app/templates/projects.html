@@ -1,15 +1,71 @@
 <!-- app/templates/projects.html -->
 {% extends 'layout.html' %}
-
+{% block title %}Projects {% endblock title %}
 {% block content %}
-    <h2>My Projects</h2>
-    <ul>
-        {% for project in projects %}
-            <li>
-                <h3>{{ project.title }}</h3>
-                <p>{{ project.description }}</p>
-                <a href="{{ project.url }}">See Project</a>
-            </li>
-        {% endfor %}
-    </ul>
+
+<!-- projects -->
+<section id="projects" class="projects_wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center mb-4">
+               
+                <h6 class="subtitle">My latest projects</h6>
+                <p id="project-desc">I have worked on several exciting projects recently that showcase my expertise in full-stack web development and data science.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-7 col-md-7 mb-4">
+                <div class="card p-0">
+                    <span style="background-image: url(../static/images/agriaid.png);"></span>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 mb-4">
+                <div class="row project-content">
+                    <div class="col-md-12 ">
+                        <h6>Agri-aid</h6>
+                    </div>
+                    <div class="col-md-12">
+                        <p>The Agri Aid project is a web platform that helps farmers optimize agricultural practices using modern technology. It offers crop recommendations, weather forecasts, and market price updates, enabling farmers to make data-driven decisions and boost crop yield and profitability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-5 col-md-5 mb-4">
+                <div class="row project-content">
+                    <div class="col-md-12 ">
+                        <h6>travelverse</h6>
+                    </div>
+                    <div class="col-md-12">
+                        <p>TravelVerse is a travel website that simplifies planning by offering personalized recommendations, itineraries, and destination guides. It enhances the travel experience with curated suggestions based on user preferences, budgets, and goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-7 mb-4">
+                <div class="card p-0">
+                    <span style="background-image: url(../static/images/travelverse.png);"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-7 col-md-7 mb-4">
+                <div class="card p-0">
+                    <span style="background-image: url(../static/images/rb_54591.png);"></span>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 mb-4">
+                <div class="row project-content">
+                    <div class="col-md-12 ">
+                        <h6>share your thoughts </h6>
+                    </div>
+                    <div class="col-md-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, numquam! Laborum possimus odit omnis repellat obcaecati adipisci placeat minus porro quaerat, voluptates molestias incidunt rerum, animi voluptas quae recusandae asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- projects exit -->
+
 {% endblock %}

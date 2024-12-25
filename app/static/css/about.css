@@ -1,0 +1,152 @@
+.about_wrapper{
+    padding: 25px;
+}
+.about_wrapper p{
+    font-size: 15px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    display: block;
+    color: var(--text-gray);
+    margin-bottom: 0px;
+}
+ ul.nav-pills {
+    border: 1px solid var(--gray-color);
+    border-radius: 50px;
+}
+
+.about_wrapper ul li .nav-link {
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all .4s cubic-bezier(0, 0, 0.2, 1);
+    display: inline-block;
+    color: var(--bg-dark-blue);
+    border: 0;
+}
+
+.about_wrapper ul li .nav-link.active {
+    background-color: var(--bg-dark-blue) !important;
+}
+
+/* Ensuring it's applied */
+
+.about_wrapper .single-progress {
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.about_wrapper .single-progress h6{
+ letter-spacing: 1.4px;
+ color: var(--primary-bg-color);
+}
+
+.about_wrapper .single-progress .progress {
+    height: 5px;
+    border-radius: 30px;
+    background-color: var(--bg-dark-blue);
+}
+
+.single-progress .label {
+    position: absolute;
+    right: 0; /* Aligns the label to the right */
+    top: 10px; /* Adjust top margin for label placement */
+    font-size: 14px; /* Adjust font size */
+    color: var(--primary-bg-color); /* Optional: Color for the label */
+}
+
+.about_wrapper .single-progress .progress-bar {
+    /* background-image: var(--gradient-text); */
+    background-color:var(--gray-color);
+    border-radius: 30px;
+
+}
+
+/* .about_wrapper .single-progress h6 {
+    text-align: left;
+} */
+
+/* .about_wrapper .single-progress .label {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--gray-color);
+    font-size: 15px;
+} */
+
+/* .about_wrapper .tab-pane li {
+    color: var(--bg-dark-blue);
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    list-style: none;
+} */
+
+/* .about_wrapper .tab-pane li a {
+    font-weight: 500;
+    display: block;
+    color: var(--bg-dark-blue);
+    text-decoration: none;
+} */
+
+
+.edu-details h5{
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    display: inline-block;
+    color: var(--primary-bg-color);
+    margin-bottom: 0px;
+    /* margin-right: 10px; Adds a little space between the title and the years */
+    vertical-align: middle;
+}
+.edu-details h5 span{
+    font-size: 10px;
+    display: inline-block;
+    color: var(--text-gray); /* Adjust color to match the design */
+    vertical-align: middle;
+}
+.edu-details h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: block;
+    color: var(--text-gray);
+    margin-bottom: 0px;
+}
+
+.edu-details span{
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    display: block;
+    color: var(--text-gray);
+    margin-bottom: 0px;
+}
+
+.experience ul{
+ list-style-type:'\1F4BC';
+}
+.experience ul li {
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+    color: var(--text-gray);
+    font-family: var(--primary-font);
+}
+.achievements ul{
+    list-style-type: '\1F3C6';
+}
+.achievements ul li {
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    font-weight: 400;
+    color: var(--text-gray);
+    font-family: var(--primary-font);
+}
+
