@@ -1,6 +1,7 @@
 # app/routes.py
 from flask import render_template ,request
 from flask_mail import Mail , Message
+from .databases import get_db
 
 # Avoid circular import by importing `app` inside a route function
 def create_routes(app):
@@ -25,6 +26,26 @@ def create_routes(app):
             mail = Mail(app)
             name = request.form["name"]
             email = request.form['email']
+            phone = request.form['phone']
+            message = request.form['message']
+            #  Get a database connection
+            db = get_db()
+            # print(db)
+            # Create a cursor to interact with the database
+            cursor = db.cursor()
+
+            # Example: Fetch all records from a 'users' table
+            # cursor.execute('select * from users')
+            # Insert the form data into the 'users' table
+            cursor.execute('''
+                INSERT INTO feedback (name, phone, email, message) 
+                VALUES (?, ?, ?, ?)
+            ''', (name, phone, email, message))
+
+            # Commit the transaction to save the changes
+            db.commit()
+            
+            
             if email :
                 customer = [email]
                 #print(customer)       
