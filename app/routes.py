@@ -42,6 +42,8 @@ Bukya Jagadish Naik """
             msg = Message("Thank You for Your Feedback on My Portfolio", sender='noreplay@demo.com' ,recipients=customer)
             msg.body = msgbody
             mail.send(msg)
+            print("name :" ,name)
+            print("Message :",message)
         return render_template('contact.html')
     
     @app.route('/services')
