@@ -8,3 +8,5 @@ werkzeug==3.0.2
 zipp==3.18.1
 gunicorn
 Flask-Mail==0.9.1
+sqlite3
+flask-sqlalchemy

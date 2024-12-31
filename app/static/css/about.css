@@ -1,6 +1,3 @@
-.about_wrapper{
-    padding: 25px;
-}
 .about_wrapper p{
     font-size: 15px;
     letter-spacing: 1.4px;
@@ -49,46 +46,17 @@
 
 .single-progress .label {
     position: absolute;
-    right: 0; /* Aligns the label to the right */
-    top: 10px; /* Adjust top margin for label placement */
-    font-size: 14px; /* Adjust font size */
-    color: var(--primary-bg-color); /* Optional: Color for the label */
+    right: 0; 
+    top: 10px; 
+    font-size: 14px; 
+    color: var(--primary-bg-color); 
 }
 
 .about_wrapper .single-progress .progress-bar {
-    /* background-image: var(--gradient-text); */
     background-color:var(--gray-color);
     border-radius: 30px;
 
 }
-
-/* .about_wrapper .single-progress h6 {
-    text-align: left;
-} */
-
-/* .about_wrapper .single-progress .label {
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: var(--gray-color);
-    font-size: 15px;
-} */
-
-/* .about_wrapper .tab-pane li {
-    color: var(--bg-dark-blue);
-    font-size: 16px;
-    margin-bottom: 15px;
-    font-weight: 300;
-    list-style: none;
-} */
-
-/* .about_wrapper .tab-pane li a {
-    font-weight: 500;
-    display: block;
-    color: var(--bg-dark-blue);
-    text-decoration: none;
-} */
-
 
 .edu-details h5{
     font-size: 15px;
@@ -98,13 +66,12 @@
     display: inline-block;
     color: var(--primary-bg-color);
     margin-bottom: 0px;
-    /* margin-right: 10px; Adds a little space between the title and the years */
     vertical-align: middle;
 }
 .edu-details h5 span{
     font-size: 10px;
     display: inline-block;
-    color: var(--text-gray); /* Adjust color to match the design */
+    color: var(--text-gray); 
     vertical-align: middle;
 }
 .edu-details h4{

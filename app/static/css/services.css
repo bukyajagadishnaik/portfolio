@@ -25,7 +25,6 @@
 }
 
 .services_wrapper .card p {
-    /* writing-mode: vertical-lr; */
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
