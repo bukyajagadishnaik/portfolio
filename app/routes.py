@@ -1,5 +1,5 @@
 # app/routes.py
-from flask import render_template ,request 
+from flask import render_template ,request, send_from_directory 
 from flask_mail import Mail , Message
 
 # Avoid circular import by importing `app` inside a route function
@@ -8,7 +8,11 @@ def create_routes(app):
     @app.route('/')
     def index():
         return render_template('index.html')
-
+    
+    @app.route('/download_cv')
+    def download_cv():
+        return send_from_directory(directory='static', path='Bukya_jagadish_Naik_Resume.pdf', as_attachment=True)
+    
     @app.route('/about')
     def about():
         return render_template('about.html')
