@@ -11,7 +11,7 @@ def create_routes(app):
     
     @app.route('/download_cv')
     def download_cv():
-        return send_from_directory(directory='static', path='Bukya_jagadish_Naik_Resume.pdf', as_attachment=True)
+        return send_from_directory(directory='static', path='B_JagadishNaik_resume.pdf', as_attachment=True)
     
     @app.route('/about')
     def about():
@@ -34,16 +34,17 @@ def create_routes(app):
             if email :
                 customer = [email]     
                 msgbody = f"""
-Hi {name},
-Thank you so much for visiting my portfolio website and taking the time to send me your feedback and suggestions! I truly appreciate your thoughts on [specific suggestion or message they sent].
+Dear {name},
 
-Your insights have given me some great ideas to consider, and I'm always looking to improve my work. If you have any further suggestions or questions, feel free to reach out—I’d love to continue the conversation.
-            
-Thanks again for your support!
+Thank you for taking the time to visit my portfolio website and share your valuable feedback. I truly appreciate your thoughtful insights.
 
-Best regards,
-Bukya Jagadish Naik """
-            msg = Message("Thank You for Your Feedback on My Portfolio", sender='noreplay@demo.com' ,recipients=customer)
+Your insights have provided me with meaningful ideas for improvement, and I’m always eager to refine and enhance my work. Please don’t hesitate to reach out if you have any additional suggestions or questions—I’d be happy to continue the conversation.
+
+Thank you once again for your support and encouragement.
+
+Warm regards,
+Bukya Jagadish Naik"""
+            msg = Message("Thank You for Your Feedback", sender='noreplay@demo.com' ,recipients=customer)
             msg.body = msgbody
             mail.send(msg)
             print("name :" ,name)
